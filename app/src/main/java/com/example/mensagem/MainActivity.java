@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
     public void enviaMensagem(View view) {
         Intent intent = new Intent(this, MostraMensagemActivity.class);
 
-        //todo: enviar mensagem
+        String mensagem = "Olá Mundo";
+
+        intent.putExtra("MENSAGEM",mensagem);
 
         startActivity(intent);
     }
